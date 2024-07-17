@@ -26,15 +26,15 @@ $ yarn install
 To build the project, compile the TypeScript files using:
 
 ```bash
-yarn build
+$ yarn build
 ```
 
 ### Running the Test Script
 
-You can run and play with the `testScript.ts` file to see how the utility functions work. First, compile the TypeScript files:
+You can run and play with the `testScript.ts` file to see how the utility functions work.
 
 ```bash
-node dist/testScript.js
+$ node dist/testScript.js
 ```
 
 ## Testing
@@ -42,15 +42,15 @@ node dist/testScript.js
 To run the tests, use the following command:
 
 ```bash
-yarn test
+$ yarn test
 ```
 
 ## Functions
 
-`parse`
+#### Parse
 Converts a shorthand date string to a `Date` object.
 
-`stringify`
+#### Stringify
 Converts a `Date` object to a shorthand date string.
 
 ### Signature:
