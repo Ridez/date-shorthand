@@ -5,7 +5,6 @@ This project provides utility functions for parsing and stringifying date shorth
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Usage](#usage)
 - [Testing](#testing)
 - [Functions](#functions)
 - [Examples](#examples)
@@ -19,24 +18,6 @@ Install the dependencies using Yarn:
 $ yarn install
 ```
 
-## Usage
-
-### Building the Project
-
-To build the project, compile the TypeScript files using:
-
-```bash
-$ yarn build
-```
-
-### Running the Test Script
-
-You can run and play with the `testScript.ts` file to see how the utility functions work.
-
-```bash
-$ node dist/testScript.js
-```
-
 ## Testing
 
 To run the tests, use the following command:
@@ -48,9 +29,11 @@ $ yarn test
 ## Functions
 
 #### Parse
+
 Converts a shorthand date string to a `Date` object.
 
 #### Stringify
+
 Converts a `Date` object to a shorthand date string.
 
 ### Signature:
