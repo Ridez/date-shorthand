@@ -1,15 +1,12 @@
 import { parse, stringify } from "../src/utils/dateUtils";
 
-const originalDateNow = Date.now;
-
 beforeAll(() => {
-  global.Date.now = jest.fn(() =>
-    new Date("2020-05-01T00:00:00.000Z").getTime()
-  );
+  jest.useFakeTimers();
+  jest.setSystemTime(new Date("2020-05-01T00:00:00.000Z"));
 });
 
 afterAll(() => {
-  global.Date.now = originalDateNow;
+  jest.useRealTimers();
 });
 
 const testCases = [
